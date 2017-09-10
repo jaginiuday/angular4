@@ -1,0 +1,15 @@
+<h2 align="center">
+  <u> Bypass Security Example Page </u>
+</h2>
+
+<h4>An untrusted URL:</h4>
+<p><a [href]="url1">Click me</a></p>
+<h4>A trusted URL:</h4>
+<p><a [href]="sanitizedUrl1">Click me</a></p>
+
+<h4>Resource URL:</h4>
+<p>Showing: {{url2}}</p>
+<p>Trusted:</p>
+<iframe width="640" height="390" [src]="sanitizedUrl2"></iframe>
+<p>Untrusted:</p>
+<iframe width="640" height="390" [src]="url2"></iframe>
